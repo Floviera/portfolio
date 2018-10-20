@@ -16,13 +16,13 @@ class Navbar extends Component{
                             <a className="nav-link" href="#">Resume <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Projects</a>
+                            <a className="nav-link" href="#projectpage">Projects</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">About Me</a>
+                            <a className="nav-link" href="#aboutmepage">About Me</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " href="#">Contact</a>
+                            <a className="nav-link " href="#contactpage">Contact</a>
                         </li>
                     </ul>
                 </div>

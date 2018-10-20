@@ -9,7 +9,7 @@ class Material extends Component{
     render(){
         return(
             <div className="project-container">
-                <h3 className="projectHeader">Projects</h3>
+                <h3 id="projectpage"className="projectHeader">Projects</h3>
                 <div className="material-container">           
                     <div className="card-group">
                         <div className="card">
