@@ -1,0 +1,39 @@
+//PROJECTS------------------------------------------
+.introPar{
+  font-family: 'Libre Baskerville', serif;
+}
+
+//RECENT WORK PAR------------------------------------------
+.recentWork{
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  padding-bottom: 10px;
+  color: rgba(0, 0, 0, 0.5); 
+}
+
+//HEADER------------------------------------------
+.projectHeader {
+  padding-top: 20%;
+  font-family: 'Libre Baskerville', serif;
+  padding-bottom: 3%;
+  font-size:3vw;
+}
+
+.recentWork{
+  //padding-top: 3%;
+}
+
+//material box buttons ------------------------------------------
+button .view-code:hover{
+  background-color: #343a40;
+}
+
+//cards ------------------------------------------
+.card-text{
+  color: grey;
+}
+
+.btn-dark{
+  border-radius: 50px;
+  font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300|Raleway+Dots|Lato:300|Inconsolata|Montserrat);
+
+.aboutMe{
+    padding-top: 10%;
+    font-family: 'Libre Baskerville', serif;
+    padding-bottom: 3%;
+    font-size:3vw;
+}
+
+//INTRO-----------------------------------
+
+.introduceMyself{
+    padding-top: 5%;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    color: #A9A9A9;
+}
+//INTRO PAR-----------------------------------
+
+.introPar {
+    text-align: center;
+    padding-top: 3%;
+    color: #000e2f;
+    text-indent: 25px;
+    
+}
+    
+//IMG-----------------------------------
+
+.aboutMeImg {
+  border: 3px solid #343a40;
+  padding: 5px; 
+  width: 400px;
+  margin: 0 auto;
+}
+
+.selfie {
+  width: 250px;
+}
+

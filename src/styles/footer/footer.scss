@@ -1,0 +1,26 @@
+
+
+.footer{
+    background-size:cover;
+    background-color: #e8e0e0;
+    padding: 5px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875em;
+    color: #212529;
+    text-align: center; 
+}
+
+@keyframes pound {
+	from { transform: none; }
+	50% { transform: scale(1.4); }
+	to { transform: none; }
+}
+
+
+.heart {
+	display: inline-block;
+	font-size: 15px;
+	color: #212529;
+	animation: pound .80s infinite;
+	transform-origin: center;
+}
