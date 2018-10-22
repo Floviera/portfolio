@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import {Component} from "react";
 import postcard from "../../../img/postcard.png"; 
 import instagram from "../../../img/instagram2.png"; 
+import todo from "../../../img/to-do-list.png"; 
+import restaurant from "../../../img/restaurant.png"; 
 
 class Material extends Component{
     render(){
@@ -13,11 +15,20 @@ class Material extends Component{
                 <div className="material-container">           
                     <div className="card-group">
                         <div className="card">
-                            <img className="card-img-top" src="https://bit.ly/2Epsa56" alt="Card image cap"/>
+                            <img className="card-img-top" src={restaurant} alt="Card image cap"/>
                             <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <p  className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p className="card-text"><small className="text-muted">Javascript <br />HTML</small></p>
+                                <h5 className="card-title">E-commerce</h5>
+                                <p  className="card-text">An e-commerce website allows user to purchase and sell goods. It combines back-end data with front-end technology. Includes a shopping cart, search bar, categories, registering users and much more.</p>
+                                <p className="card-text"><small className="text-muted">React J.S<br />Javascript<br />Python<br />Django<br />Postgresql<br />Boostrap<br />HTML<br />CSS</small></p>
+                                <button type="button" className="btn btn-dark"><i className="fa fa-github"></i></button>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <img className="card-img-top" src={postcard} alt="Card image cap"/>
+                            <div className="card-body">
+                                <h5 className="card-title">Digital Postcard</h5>
+                                <p className="card-text">Simple, clean digital postcard that allows you to share and send messages.</p>
+                                <p className="card-text"><small className="text-muted html">HTML<br /> CSS</small></p>
                                 <button type="button" className="btn btn-dark"><i className="fa fa-github"></i></button>
                             </div>
                         </div>
@@ -30,12 +41,34 @@ class Material extends Component{
                                 <button type="button" className="btn btn-dark"><i className="fa fa-github"></i></button>
                             </div>
                         </div>
+                    </div>
+                </div>   
+                <div className="material-container">           
+                    <div className="card-group">
+                        <div className="card">
+                            <img className="card-img-top" src={todo} alt="Card image cap"/>
+                            <div className="card-body">
+                                <h5 className="card-title">Todo List</h5>
+                                <p  className="card-text">A fully functioning todo list that allows you to add, and delete task. Also shows you accurate date and time. </p>
+                                <p className="card-text"><small className="text-muted">React j.s <br />Javascript<br />HTML<br />CSS</small></p>
+                                <button type="button" className="btn btn-dark"><i className="fa fa-github"></i></button>
+                            </div>
+                        </div>
                         <div className="card">
                             <img className="card-img-top" src={postcard} alt="Card image cap"/>
                             <div className="card-body">
                                 <h5 className="card-title">Digital Postcard</h5>
                                 <p className="card-text">Simple, clean digital postcard that allows you to share and send messages.</p>
                                 <p className="card-text"><small className="text-muted html">HTML<br /> CSS</small></p>
+                                <button type="button" className="btn btn-dark"><i className="fa fa-github"></i></button>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <img className="card-img-top" src={instagram} alt="Card image cap"/>
+                            <div className="card-body">
+                                <h5 className="card-title">Instagram Replica</h5>
+                                <p className="card-text">An instragram replica with an animated background that lets you toggle between indivual pictures or a gallery. </p>
+                                <p className="card-text"><small className="text-muted">HHTML <br /> CSS <br /> Bootstrap</small></p>
                                 <button type="button" className="btn btn-dark"><i className="fa fa-github"></i></button>
                             </div>
                         </div>
