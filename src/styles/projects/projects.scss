@@ -1,301 +1,89 @@
 
 
-#hexGrid {
+.a-tag {
+  text-decoration: none;
+  color: inherit !important;
+  height: 425px;
+  margin-bottom: 50px;
+}
+
+.wrapper {
+  max-width: 850px;
+  margin: 20px auto;
+  height: auto;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
-  font-family: Helvetica, sans-serif;
-  font-size: 15px;
-  list-style-type: none;
+  justify-content: space-around;
 }
 
-.hex {
+.card_wrapper {
+  width: 350px;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   position: relative;
-  visibility:hidden;
-  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
-}
-.hex::after{
-  content:'';
-  display:block;
-  padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
-}
-.hexIn{
-  position: absolute;
-  width:96%;
-  padding-bottom: 110.851%; /* =  width / sin(60) */
-  margin:0 2%;
-  overflow: hidden;
-  visibility: hidden;
-  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
-  -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-      -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-          transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-}
-.hexIn * {
-  position: absolute;
-  visibility: visible;
-  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
-}
-.hexLink {
-    display:block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #fff;
-    overflow: hidden;
-    -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
-        -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
-            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+  height: 430px;
+  border: 1px solid #DEDCDC;
+  border-radius: 6px;
+  background: #E4F2F9;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://cdn.dribbble.com/users/77760/screenshots/2042501/potato.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-/* HEXAGON CONTENT */
-.hex img {
-  left: -100%;
-  right: -100%;
-  width: auto;
-  height: 100%;
-  margin: 0 auto;
-  -webkit-transform: rotate3d(0,0,0,0deg);
-      -ms-transform: rotate3d(0,0,0,0deg);
-          transform: rotate3d(0,0,0,0deg);
+a:nth-child(2) .card_wrapper {
+  background-image: url("https://cdn.dribbble.com/users/4605/screenshots/1757843/snap.png");
 }
 
-.hex h4, .hex p {
-  width: 100%;
-  padding: 5%;
-  box-sizing:border-box;
-  background-color: rgba(255, 160, 000, 0.6);
+a:nth-of-type(3) .card_wrapper {
+  background-image: url("https://cdn.dribbble.com/users/33073/screenshots/2425824/800.png");
+}
+
+a:nth-of-type(4) .card_wrapper {
+  background-image: url("https://cdn.dribbble.com/users/25514/screenshots/2595669/payment_plans_illustrations_ramotion.png");
+}
+
+.project_summary {
+  margin-top: 260px;
+  postion: relative;
+  padding: 0 20px;
+  background: #fff;
+  flex: 1;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.project_title {
+  margin-bottom: 0;
+  padding-top: 15px;
+  color: #5D6771;
+}
+
+.created_date {
+  margin: 10px 0;
+  color: #8A8EA0;
+}
+
+.project_desc {
+  margin: 0;
   font-weight: 300;
-  -webkit-transition:  -webkit-transform .15s ease-out, opacity 1.3s ease-out;
-          transition:          transform .15s ease-out, opacity 1.3s ease-out;
+  width: 100%;
 }
-.hex h4 {
-  bottom: 50%;
-  padding-top:50%;
-  font-size: 1.5em;
-  z-index: 1;
-  -webkit-transform:translate3d(100%, -100%, 0);
-      -ms-transform:translate3d(100%, -100%, 0);
-          transform:translate3d(100%, -100%, 0);
-}
-.hex h4::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 45%;
-  width: 10%;
-  text-align: center;
-  border-bottom: 1px solid #fff;
-}
-.hex p {
-  top: 50%;
-  padding-bottom:50%;
-  -webkit-transform:translate3d(-100%, 100%,0);
-      -ms-transform:translate3d(-100%, 100%,0);
-          transform:translate3d(-100%, 100%,0);
+
+a:hover .card_wrapper {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.09);
+  -webkit-transform: scale3d(1.008, 1.008, 1);
+          transform: scale3d(1.008, 1.008, 1);
 }
 
 
-/* HEXAGON HOVER EFFECT */
-.hexLink:hover h4, .hexLink:focus h4,
-.hexLink:hover p, .hexLink:focus p{
-  -webkit-transform:translate3d(0,0,0);
-      -ms-transform:translate3d(0,0,0);
-          transform:translate3d(0,0,0);
-}
-
-
-/*=================================================
-   MEDIA QUERIES
-=================================================*/
-@media (min-width:801px) { /* <- 5-4  hexagons per row */
-  #home .hireMe {
-    position: absolute;
-    top: 0;
-    right: 0.2em;
-  }
-  #about .container{
-    width: 60%;
-    margin: auto;
-  }
-  #skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-    "label label label"
-    "html css js"
-    "other other other";
-  }
-  #skills h3 {
-    grid-area: label;
-  }
-  #htmlCard {
-    grid-area: html;
-  }
-  #cssCard {
-    grid-area: css;
-  }
-  #jsCard {
-    grid-area: js;
-  }
-  .otherskills{
-    grid-area: other;
-  }
-
-  /* HEXAGONS */
-  #hexGrid{
-    padding-bottom: 4.4%;
-  }
-  .hex {
-    width: 20%; /* = 100 / 5 */
-  }
-  .hex:nth-child(9n+1){ /* first hexagon of odd rows */
-    margin-left:10%;  /* = width of .hex / 2  to indent odd rows */
-  }
-  .hex:nth-child(n+14){
-  	display: none;
-  } 
-  
-  .left {
-    float: left;
-  }
-  .right {
-    float: right;
-  } 
-
-
-}
-
-@media (max-width: 800px) and (min-width:601px) { 
-  #home .hireMe {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  #about .container{
-    width: 70%;
-    margin: auto;
-  }
-  #skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-    "label label label"
-    "html css js"
-    "other other other";
-  }
-  #skills h3 {
-    grid-area: label;
-  }
-  #htmlCard {
-    grid-area: html;
-  }
-  #cssCard {
-    grid-area: css;
-  }
-  #jsCard {
-    grid-area: js;
-  }
-  .otherskills{
-    grid-area: other;
-  }
-  
-
-  /* HEXAGONS */
-  #hexGrid{
-    padding-bottom: 5.5%;
-  }
-  .hex {
-    width: 25%; /* = 100 / 4 */
-  }
-  .hex:nth-child(7n+1){ /* first hexagon of odd rows */
-    margin-left:12.5%;  /* = width of .hex / 2  to indent odd rows */
-  }
-  .hex:nth-child(n+11){
-  	display: none;
-  }  
-  
-  .left {
-    float: left;
-  }
-  .right {
-    float: right;
-  } 
-
-
-}
-
-@media (max-width: 600px) and (min-width:401px) { 
-  #home .hireMe {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  #about .container{
-    width: 80%;
-    margin: auto;
-  }
-
-
-  /* HEXAGONS */
-  #hexGrid{
-    padding-bottom: 7.4%;
-    font-size: 12px;
-  }
-  .hex {
-    width: 33.333%; /* = 100 / 3 */
-  }
-  .hex:nth-child(5n+1){ /* first hexagon of odd rows */
-    margin-left:16.666%;  /* = width of .hex / 2  to indent odd rows */
-  }
-  .hex:nth-child(n+8){
-  	display: none;
-  }  
-
-  .left {
-    float: left;
-  }
-  .right {
-    float: right;
-  } 
-
-}
-
-@media (max-width: 400px) { 
-  /* HEXAGONS */
-  #hexGrid{
-    padding-bottom: 11.2%;
-    font-size: 12px;
-  }
-  .hex {
-    width: 50%; /* = 100 / 3 */
-  }
-  .hex:nth-child(3n+1){ /* first hexagon of odd rows */
-    margin-left:25%;  /* = width of .hex / 2  to indent odd rows */
-  }
-  .hex:nth-child(n+8){
-  	display: none;
-  }
-}
-
-//PROJECTS------------------------------------------
-.projectGallery{
-    font-family: 'Libre Baskerville', serif;
-    padding-bottom: 2%;
-    padding-top: 5%;
-    font-size:5vw;
-}
-//PROJECTS------------------------------------------
-.introPar{
+.projectHeader {
+  padding-top: 20%;
   font-family: 'Libre Baskerville', serif;
-}
-
-//RECENT WORK PAR------------------------------------------
-.recentWork{
-  font-family: 'Libre Baskerville', serif;
-  font-style: italic;
-  padding-bottom: 10px;
-  color: rgba(0, 0, 0, 0.5); 
+  font-weight: 200;
+  padding-bottom: 3%;
+  font-size:4vw;
 }

@@ -18,7 +18,7 @@ export class Home extends React.Component{
             <div className="text-center">
                 <Navbar />
                 <Header />
-                <Material />
+                <Projects />
                 <About /> 
                 <Contact />
                 <Footer />

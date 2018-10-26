@@ -13,16 +13,16 @@ class Navbar extends Component{
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Resume <span className="sr-only">(current)</span></a>
+                            <a href="file:///Users/florenciaviera/Downloads/career.resume.%20%20(1).pdf" className="nav-link" download><i className="fa fa-download"></i> Resume?<span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#projectpage">Projects</a>
+                            <a className="nav-link" href="#projectpage">Projects?</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#aboutmepage">About Me</a>
+                            <a className="nav-link" href="#aboutmepage">About Me?</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " href="#contactpage">Contact</a>
+                            <a className="nav-link " href="#contactpage">Contact?</a>
                         </li>
                     </ul>
                 </div>
