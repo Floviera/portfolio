@@ -15,6 +15,7 @@ import '../styles/contact/contact.scss';
 import '../styles/skills/skills.scss';
 import '../styles/material/material.scss';
 import '../styles/footer/footer.scss';
+import resume from "../img/career.resume.pdf"; 
 
 //import your own components
 import {Home} from './component/home.jsx';

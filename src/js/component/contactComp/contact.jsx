@@ -7,7 +7,7 @@ class Contact extends Component {
         return(
             <div className="containterContact">
                 <div><h3 id="contactpage"className="contactMe">Contact?</h3>
-                    <form id="form" className="topBefore">
+                    <form action="mailto:florenciaviera4@gmail.com" method="post" type="text/plain" id="form" className="topBefore">
                         <input id="name" type="text" placeholder="NAME"/>
                         <input id="email" type="text" placeholder="E-MAIL"/>
                         <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
