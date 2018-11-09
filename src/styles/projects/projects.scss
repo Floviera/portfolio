@@ -1,5 +1,3 @@
-
-
 .a-tag {
   text-decoration: none;
   color: inherit !important;
@@ -24,9 +22,9 @@
   transition: transform 0.5s, -webkit-transform 0.5s;
   position: relative;
   height: 430px;
-  border: 1px solid #DEDCDC;
+  border: 1px solid #dedcdc;
   border-radius: 6px;
-  background: #E4F2F9;
+  background: #e4f2f9;
   display: flex;
   flex-direction: column;
   background-image: url("https://bit.ly/2JmoW1a");
@@ -35,7 +33,7 @@
 }
 
 a:nth-child(2) .card_wrapper {
-  background-image: url("https://bit.ly/2PVTmcQ");
+  background-image: url("https://bit.ly/2PNcTiU");
 }
 
 a:nth-of-type(3) .card_wrapper {
@@ -48,7 +46,7 @@ a:nth-of-type(4) .card_wrapper {
 
 .project_summary {
   margin-top: 260px;
-  postion: relative;
+  position: relative;
   padding: 0 20px;
   background: #fff;
   flex: 1;
@@ -59,12 +57,12 @@ a:nth-of-type(4) .card_wrapper {
 .project_title {
   margin-bottom: 0;
   padding-top: 15px;
-  color: #5D6771;
+  color: #5d6771;
 }
 
 .created_date {
   margin: 10px 0;
-  color: #8A8EA0;
+  color: #8a8ea0;
 }
 
 .project_desc {
@@ -76,14 +74,13 @@ a:nth-of-type(4) .card_wrapper {
 a:hover .card_wrapper {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.09);
   -webkit-transform: scale3d(1.008, 1.008, 1);
-          transform: scale3d(1.008, 1.008, 1);
+  transform: scale3d(1.008, 1.008, 1);
 }
-
 
 .projectHeader {
   padding-top: 20%;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 200;
   padding-bottom: 3%;
-  font-size:4vw;
+  font-size: 4vw;
 }
