@@ -1,6 +1,6 @@
 # Greetings World!
 
-This e-commerce web restaurant was made with:
+My portfolio was made with:
 
  - React J.S 
  - Javascript
