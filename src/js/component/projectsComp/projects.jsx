@@ -30,7 +30,7 @@ class Projects extends Component{
                         </article>
                     </a>
                   
-                    <a className="a-tag" href="#">
+                    <a className="a-tag" href="https://floviera.github.io/instagram-replica/">
                         <article className="card_wrapper">
                             <div className="project_summary">
                                 <h2 className="project_title">Instagram Replica</h2>

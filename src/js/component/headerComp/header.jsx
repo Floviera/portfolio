@@ -8,7 +8,7 @@ class Header extends Component{
             <div className="containerForHeader">
                 <h1 className="headerTitleOne">Hello&#x2c; my name is <span className="florencia">Florencia</span>,<br />
                 I&#x27;m a <span className="front-end">Front End Web Developer</span><br />
-                from <span className="southflo">South Florida?</span></h1>
+                from <span className="southflo">South Florida.</span></h1>
                 <p><i>Always curious, always learning.</i></p>
                 
                 <div className="mediaButton">
